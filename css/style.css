@@ -1,0 +1,221 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oswald", sans-serif;
+}
+/* Scrollbar ganteng */
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+  background-color: burlywood;
+  border-radius: 1.6em;
+}
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+.bg-line {
+  width: max-content;
+  margin-top: 0.5em;
+  padding-right: 5em;
+  padding-left: 1em;
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.icon {
+  font-style: normal;
+  font-size: 2rem;
+}
+.icon.heart {
+  color: red;
+}
+
+.container {
+  display: grid;
+  width: 90%;
+  margin: 80px auto 0;
+  gap: 8px;
+  grid-template-columns: 1fr;
+}
+
+/* header */
+header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+  padding: 0 5vw 2vh;
+  align-items: flex-end;
+  background-color: white;
+}
+
+.judul-web {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  font-family: "Lobster", sans-serif;
+}
+
+.nav-links {
+  position: relative;
+  display: grid;
+  width: 60%;
+  height: 60%;
+  margin-left: auto;
+  gap: 5px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.tablet .nav-links {
+  display: none;
+}
+
+.nav-links li {
+  list-style: none;
+  /* border: 1px solid green; */
+}
+
+.nav-links li a {
+  display: grid;
+  height: 100%;
+  place-content: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  text-transform: uppercase;
+}
+.nav-links li a:hover {
+  background-color: #805100;
+}
+/* End of header */
+
+/* Featured Section */
+.featured {
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "jumbo jumbo top"
+    "jumbo jumbo bot";
+  height: 50vh;
+}
+.featured a {
+  text-decoration: none;
+  color: black;
+}
+.jumbo {
+  position: relative;
+  grid-area: jumbo;
+  display: grid;
+  align-content: end;
+  background-color: #eee;
+  padding: 1.25em;
+  background-image: url(../img/jumbo/0.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: 0.8s;
+}
+.jumbo h1 {
+  font-family: "Lobster", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+.jumbo p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.jumbo .dots {
+  position: absolute;
+  width: 80px;
+  bottom: 0;
+  right: 5%;
+  bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.jumbo .dot {
+  width: 15px;
+  height: 15px;
+  background-color: #666;
+  border-radius: 50%;
+  transition: 0.8s;
+}
+.jumbo .dot.active {
+  background-color: white;
+}
+.top,
+.bot {
+  background-color: #ccc;
+  display: grid;
+  place-content: end start;
+  padding: 1.2em;
+}
+.top {
+  grid-area: top;
+  background-image: url(../img/kopi-zimbabwe.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bot {
+  grid-area: bot;
+  background-image: url(../img/hoodie.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.price,
+.sub-price {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 200;
+}
+.sub-price {
+  font-size: 1.2rem;
+}
+/* End of Featured Section */
+
+/* Keunggulan Section */
+.keunggulan {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.keunggulan .section {
+  background-color: #eee;
+  padding: 1em;
+  text-align: center;
+}
+.keunggulan .section h3 {
+  font-size: 1.5rem;
+}
+/* End of Keunggulan Section */
+
+footer {
+  margin-top: 1em;
+  padding: 1em;
+  text-align: center;
+  background-color: #222;
+  color: white;
+}
+footer h2 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 500;
+}
+footer h2 .normal {
+  font-family: "Oswald", sans-serif;
+}
+footer .icon {
+  font-size: 1.5rem;
+}

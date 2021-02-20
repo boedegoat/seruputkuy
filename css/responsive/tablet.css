@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .tablet .nav-links {
+    display: grid;
+    width: 100%;
+    height: 50px;
+  }
+  section.featured {
+    grid-template-areas:
+      "jumbo jumbo"
+      "top bot";
+    grid-template-rows: 2fr 1fr;
+  }
+  .keunggulan {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
