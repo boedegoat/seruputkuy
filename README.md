@@ -1,5 +1,4 @@
-# seruputkuy
-Project Seruputkuy
+# Project Seruputkuy
 
 Ini adalah project hasil dari latihan CSS Grid dari youtube pak Sandhika Galih
 
